@@ -24,6 +24,7 @@ module.exports = {
     'prefer-spread': 'off',
     'import/no-cycle': 'off',
     'import/no-named-as-default': 'off',
+    'no-unused-expressions': ['error', { allowTernary: true }],
   },
   globals: {
     React: 'readonly',
