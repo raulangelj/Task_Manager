@@ -1,8 +1,9 @@
 import './App.css'
+import Header from '../Components/Header/header'
 
 const App = () => (
-  <div className="App">
-    hokla
+  <div className="contenedor">
+    <Header />
   </div>
 )
 
