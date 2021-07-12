@@ -1,0 +1,12 @@
+.tasks-list {
+	list-style: none;
+	height: 100%;
+	overflow: auto;
+}
+
+.tasks-list-message {
+	text-align: center;
+	color: #b8b8b8;
+	font-size: 20px;
+	padding: 40px 20px;
+}

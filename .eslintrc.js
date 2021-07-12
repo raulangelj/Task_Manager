@@ -21,6 +21,9 @@ module.exports = {
     semi: ['error', 'never'],
     'react/react-in-jsx-scope': 'off',
     'react/jsx-filename-extension': 'off',
+    'prefer-spread': 'off',
+    'import/no-cycle': 'off',
+    'import/no-named-as-default': 'off',
   },
   globals: {
     React: 'readonly',

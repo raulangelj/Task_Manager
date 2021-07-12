@@ -1,0 +1,43 @@
+.tasks-list-task {
+	height: 60px;
+	padding: 0 20px;
+	align-items: center;
+	color: #4B4B4B;
+	font-size: 18px;
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+}
+
+.tasks-list-text {
+	text-align: left;
+	width: 100%;
+}
+
+.tasks-list-task:hover .tasks-list-icon-action {
+	opacity: 0.5;
+}
+
+.tasks-list-icon {
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.tasks-list-icon-check {
+	margin-right: 20px;
+	font-size: 26px;
+}
+
+.tasks-list-icon-action {
+	margin-left: 20px;
+	opacity: 0;
+	transition: .3s ease all;
+}
+
+
+.tasks-list-task:nth-child(even) {
+	background: #F3F3F3;
+}
+
+.tasks-list-btn-container {
+	display: flex;
+}
