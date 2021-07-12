@@ -41,3 +41,28 @@
 .tasks-list-btn-container {
 	display: flex;
 }
+
+/* Edit task form */
+.edit-task-form {
+	display: flex;
+}
+
+.edit-task-form-input {
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid #b8b8b8;
+	background: none;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	margin-right: 20px;
+}
+
+.edit-task-form-btn {
+	border: none;
+	background: var(--verde);
+	cursor: pointer;
+	color: #fff;
+	padding: 0 10px;
+	font-family: 'Roboto', sans-serif;
+	border-radius: 3px;
+}
