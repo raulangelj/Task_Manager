@@ -21,6 +21,7 @@ const TaskForm = () => {
         done: false,
       },
     ])
+    setNewTask('')
   }
 
   return (

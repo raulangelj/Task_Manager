@@ -9,9 +9,13 @@ export const TaskContext = createContext()
 
 const App = () => {
   const [tasks, setTasks] = useState([])
+  const [showDone, setShowDone] = useState(true)
 
   return (
-    <TaskContext.Provider value={{ tasks, setTasks }}>
+    <TaskContext.Provider value={{
+      tasks, setTasks, showDone, setShowDone,
+    }}
+    >
       <div className="contenedor">
         <Header />
         <TaskForm />

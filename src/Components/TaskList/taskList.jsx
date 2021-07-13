@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import React, { useContext } from 'react'
 import { TaskContext } from '../../App/App'
 import Task from '../Task/task'
@@ -11,12 +10,26 @@ const TaskList = () => {
     <ul className="tasks-list">
       {
         tasks.tasks.length > 0
-          ? tasks.tasks.map((task) => (
-            <Task
-              key={task.id}
-              task={task}
-            />
-          ))
+          ? tasks.tasks.map((task) => {
+            if (!tasks.showDone) {
+              if (!task.done) {
+                return (
+                  <Task
+                    key={task.id}
+                    task={task}
+                  />
+                )
+              }
+            } if (tasks.showDone) {
+              return (
+                <Task
+                  key={task.id}
+                  task={task}
+                />
+              )
+            }
+            return (null)
+          })
           : <div className="tasks-list-message">~ No Pending Tasks ~</div>
       }
     </ul>
